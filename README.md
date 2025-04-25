@@ -16,3 +16,15 @@
      ## 진행 상황
 
      - **스프린트 1 (예정)**: 개발 환경 설정, 사용자 인증 구현.
+
+### 스프린트 1 - 2단계: Users 테이블 및 JPA 엔터티 구현
+
+       - **목표**:
+         - PostgreSQL `users` 테이블 설계 및 생성.
+         - JPA `User` 엔터티 구현.
+       - **산출물**:
+         - [User.java](src/main/java/com/realtimecms/entity/User.java): JPA 엔터티.
+         - `users` 테이블: id, email, password, role, created_at.
+       - **테스트**:
+         - `./gradlew bootRun`으로 `users` 테이블 자동 생성 확인.
+         - psql로 테이블 스키마 및 테스트 데이터 확인.
